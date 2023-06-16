@@ -1,0 +1,242 @@
+body {
+    background: url(./img/space.jpg);
+    background-size: cover;
+}
+
+div.space {
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    margin: 100px auto;
+}
+
+.planets {
+    width: 90vw;
+    height: 30vw;
+    margin: 0 auto;
+    transform: rotateX(70deg);
+    transform-style: preserve-3d;
+}
+
+.form1 {
+    transform-style: preserve-3d;
+    border: 0.1px solid white;
+    border-radius: 50%;
+    position: absolute;
+    animation: orbe infinite linear;
+}
+
+.orbita-sun {
+    top: calc(50% - 220px);
+    left: calc(50% - 220px);
+    border: 0px;
+    animation: none;
+}
+
+.orbita-mercury {
+    width: 900px;
+    height: 900px;
+    top: calc(50% - 60px);
+    left: calc(50% - 425px);
+    animation-duration: 24s;
+}
+
+.orbita-venus {
+    width: 1100px;
+    height: 1100px;
+    top: calc(50% - 150px);
+    left: calc(50% - 525px);
+    animation-duration: 62s;
+}
+
+.orbita-earth {
+    width: 1400px;
+    height: 1400px;
+    top: calc(50% - 260px);
+    left: calc(50% - 662px);
+    animation-duration: 100s;
+}
+
+
+
+.orbita-mars {
+    width: 1600px;
+    height: 1600px;
+    top: calc(50% - 350px);
+    left: calc(50% - 766px);
+    animation-duration: 103s;
+}
+
+.orbita-asteroids {
+    border: 0px solid white;
+    background: url(./img/asteroids.png) no-repeat 0 0;
+    background-size: contain;
+    width: 2500px;
+    height: 2500px;
+    top: calc(50% - 790px);
+    left: calc(50% - 1190px);
+    animation-duration: 120s;
+}
+
+.orbita-jupiter {
+    width: 2700px;
+    height: 2700px;
+    top: calc(50% - 850px);
+    left: calc(50% - 1290px);
+    animation-duration: 41s;
+}
+
+.orbita-saturn {
+    width: 3100px;
+    height: 3100px;
+    top: calc(50% - 970px);
+    left: calc(50% - 1500px);
+    animation-duration: 45s;
+}
+
+.orbita-uran {
+    width: 3700px;
+    height: 3700px;
+    top: calc(50% - 1222px);
+    left: calc(50% - 1850px);
+    animation-duration: 72s;
+}
+
+.orbita-neptun {
+    width: 4500px;
+    height: 4500px;
+    top: calc(50% - 1500px);
+    left: calc(50% - 2250px);
+    animation-duration: 67s;
+}
+
+.form2 {
+    position: absolute;
+    border-radius: 50%;
+    transform-style: preserve-3d;
+    animation: invert infinite linear;
+}
+
+.sun {
+    width: 500px;
+    height: 500px;
+    background: url(./img/sun.png);
+    background-size: cover;
+    transform: rotateX(-80deg);
+    animation: sun 90s infinite linear;
+}
+
+.mercury {
+    width: 15px;
+    height: 15px;
+    top: 420px;
+    left: -8px;
+    background: url(./img/mercury.png);
+    animation-duration: 24s;
+}
+
+.venus {
+    width: 30px;
+    height: 30px;
+    top: 370px;
+    left: 10px;
+    background: url(./img/venera.png);
+    animation-duration: 62s;
+}
+
+.earth {
+    width: 33px;
+    height: 33px;
+    top: 900px;
+    left: 15px;
+    background: url(./img/earth.png);
+    animation-duration: 100s;
+}
+
+.mars {
+    width: 25px;
+    height: 25px;
+    top: 577px;
+    left: 15px;
+    background: url(./img/mars.png);
+    animation-duration: 103s;
+}
+
+.asteroids {
+
+    width: 25px;
+    height: 25px;
+    top: 280px;
+    left: -15px;
+    animation-duration: 120s;
+}
+
+.jupiter {
+    width: 135px;
+    height: 135px;
+    top: 850px;
+    left: 15px;
+    background: url(./img/jupiter.png);
+    animation-duration: 41s;
+}
+
+.saturn {
+    width: 170px;
+    height: 170px;
+    top: 2010px;
+    left: 15px;
+    background: url(./img/saturn.png);
+    animation-duration: 45s;
+}
+
+.uran {
+    width: 82px;
+    height: 82px;
+    top: 2250px;
+    left: 15px;
+    background: url(./img/uranus.png);
+    animation-duration: 72s;
+}
+
+.neptun {
+    width: 112px;
+    height: 112px;
+    top: 1600px;
+    left: 15px;
+    background: url(./img/Neptune.png);
+    animation-duration: 67s;
+}
+
+.form2 {
+    background-size: cover;
+}
+
+@keyframes sun {
+    0% {
+        transform: rotateX(-80deg) rotateZ(0deg);
+    }
+
+    100% {
+        transform: rotateX(-80deg) rotateZ(360deg);
+    }
+}
+
+@keyframes orbe {
+    0% {
+        transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+    }
+
+    100% {
+        transform: rotateX(0deg) rotateY(0deg) rotateZ(360deg);
+    }
+}
+
+@keyframes invert {
+    0% {
+        transform: rotateX(90deg) rotateY(360deg) rotateZ(0deg);
+    }
+
+    100% {
+        transform: rotateX(90deg) rotateY(0deg) rotateZ(0deg);
+    }
+}
